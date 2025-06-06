@@ -33,7 +33,7 @@ export default function RootLayout({
 
       >
         <NavbarDemo />
-        <div className="mx-auto border -mt-[50px]">
+        <div className="mx-auto  -mt-[50px]">
           {children}
         </div>
       </body>
