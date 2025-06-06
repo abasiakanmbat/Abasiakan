@@ -8,9 +8,7 @@ export default function Home() {
       {/* <NavbarDemo /> */}
       {/* <DummyContent /> */}
       <Hero/>
-      <div className="h-[140vh] ">
-        hello
-      </div>
+
 
     </>
   );
