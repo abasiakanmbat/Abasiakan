@@ -1,4 +1,13 @@
-const ExpContent = ({ expContent }) => {
+
+interface ExpContentProps {
+  expContent: {
+    title: string;
+    date: string;
+    responsibilities: string[];
+  };
+}
+
+const ExpContent = ({ expContent }: ExpContentProps) => {
   return (
     <div className="card-border rounded-xl p-10">
       <h1 className="font-semibold text-3xl">{expContent.title}</h1>
