@@ -1,7 +1,9 @@
 import { useGLTF } from "@react-three/drei";
 import * as THREE from "three";
 
-interface ComputerProps extends React.ComponentProps<"group"> {}
+interface ComputerProps extends React.ComponentProps<"group"> {
+  position?: [number, number, number];
+}
 export function Computer(props: ComputerProps) {
   const { nodes, materials } = useGLTF(
     "/models/computer-optimized-transformed.glb"
