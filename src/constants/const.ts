@@ -161,7 +161,7 @@ const expCards = [
   {
     review: "Abasiakan made complex front-end concepts easy to grasp. His hands-on approach helped students build real projects confidently.",
     imgPath: "/images/laskilltxt.svg",
-    logoPath: "/images/laskillround.png",
+    logoPath: "/images/laskilllogo.svg",
     title: "Front-End Web Development Tutor",
     date: "June 2023 - June 2025",
     responsibilities: [

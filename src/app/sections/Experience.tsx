@@ -5,6 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { expCards } from "@/constants/const";
 import GlowCard from "@/components/GlowCard";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -92,7 +93,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="flex-center md:mt-40 mt-20 section-padding xl:px-0"
+      className="flex-center md:mt-40 my-20 section-padding xl:px-0"
     >
       <div className="w-full h-full md:px-20 px-5">
       
@@ -106,7 +107,12 @@ const Experience = () => {
                 <div className="xl:w-2/6">
                   <GlowCard card={card} index={index}>
                     <div>
-                      <img src={card.imgPath} alt="exp-img" />
+                      <Image
+                        src={card.imgPath}
+                        alt="exp-img"
+                        height={50}
+                        width={180}
+                      />
                     </div>
                   </GlowCard>
                 </div>
@@ -118,7 +124,12 @@ const Experience = () => {
                     </div>
                     <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
                       <div className="timeline-logo">
-                        <img src={card.logoPath} alt="logo" />
+                        <Image
+                          src={card.logoPath}
+                          alt="logo"
+                          width={50}
+                          height={50}
+                        />
                       </div>
                       <div>
                         <h1 className="font-semibold text-3xl">{card.title}</h1>
