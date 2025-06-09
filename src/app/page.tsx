@@ -1,5 +1,6 @@
 // import { DummyContent,  } from "@/components/navbar";
 
+import Experience from "./sections/Experience";
 import Hero from "./sections/Hero";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       {/* <NavbarDemo /> */}
       {/* <DummyContent /> */}
       <Hero/>
+      <Experience/>
 
 
     </>

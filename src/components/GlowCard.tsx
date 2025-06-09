@@ -1,8 +1,9 @@
+'use client'
 import { useRef } from "react";
 
 interface CardProps {
   card: {
-    review: string;
+    review?: string;
   };
   index: number;
   children?: React.ReactNode;
